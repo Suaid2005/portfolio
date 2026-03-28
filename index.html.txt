@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Suaid | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <a href="assets/resume.pdf" class="btn">Download Resume</a>
 </head>
 <body>
 
@@ -112,7 +113,7 @@
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourID" method="POST">
+    <form action="www.linkedin.com/in/muhammadsuaid" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Message"></textarea>
