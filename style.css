@@ -5,20 +5,24 @@ body {
     color: white;
 }
 
+/* HEADER */
 header {
     text-align: center;
     padding: 60px;
     background: linear-gradient(to right, #2563eb, #06b6d4);
 }
 
+/* HEADINGS */
 h2 {
     color: #38bdf8;
 }
 
+/* SECTIONS */
 section {
     padding: 40px;
 }
 
+/* CARDS */
 .project, .skill-box {
     background: #1e293b;
     padding: 15px;
@@ -26,14 +30,66 @@ section {
     border-radius: 10px;
 }
 
+/* SKILL BOX STYLE */
 .skill-box {
     border-left: 5px solid #38bdf8;
 }
 
+/* BUTTON */
 .btn {
     background: white;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* CONTACT SECTION */
+#contact {
+    text-align: center;
+}
+
+/* FORM LAYOUT (FIXED STACKING) */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;   /* 🔥 vertical layout */
+}
+
+/* INPUT FIELDS */
+form input,
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+/* TEXTAREA SIZE */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+button:hover {
+    background: #0ea5e9;
 }
