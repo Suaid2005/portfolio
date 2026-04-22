@@ -1,95 +1,201 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #0f172a;
-    color: white;
+  background: radial-gradient(circle at top, #0b1027, #020617);
+  color: #fff;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 60px;
-    background: linear-gradient(to right, #2563eb, #06b6d4);
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
-/* HEADINGS */
-h2 {
-    color: #38bdf8;
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-/* SECTIONS */
-section {
-    padding: 40px;
+.navbar a {
+  color: #aaa;
+  text-decoration: none;
 }
 
-/* CARDS */
-.project, .skill-box {
-    background: #1e293b;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
+.navbar a.active,
+.navbar a:hover {
+  color: #7c7cff;
 }
 
-/* SKILL BOX STYLE */
-.skill-box {
-    border-left: 5px solid #38bdf8;
+/* HERO */
+.hero {
+  text-align: center;
+  padding-top: 140px;
 }
 
-/* BUTTON */
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #7c7cff;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #7c7cff;
+}
+
+.socials {
+  margin: 15px 0;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #7c7cff;
+  text-decoration: none;
+}
+
+/* BUTTONS */
 .btn {
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 5px;
 }
 
-/* CONTACT SECTION */
-#contact {
-    text-align: center;
+.primary {
+  background: linear-gradient(135deg,#7c7cff,#ff7ce5);
+  color: #000;
 }
 
-/* FORM LAYOUT (FIXED STACKING) */
-form {
-    max-width: 500px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;   /* 🔥 vertical layout */
+.outline {
+  border: 1px solid #7c7cff;
+  color: #7c7cff;
 }
 
-/* INPUT FIELDS */
-form input,
-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    font-size: 14px;
+/* SECTION */
+.glass {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
 }
 
-/* TEXTAREA SIZE */
-form textarea {
-    min-height: 120px;
-    resize: vertical;
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 25px;
 }
 
-/* SUBMIT BUTTON */
-button {
-    background: #38bdf8;
-    border: none;
-    padding: 12px;
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: 0.3s;
+/* PROJECT CARD */
+.project-card {
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* HOVER EFFECT */
-button:hover {
-    background: #0ea5e9;
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* EXPANDABLE DETAILS */
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.project-card.active .project-details {
+  max-height: 500px;
+  margin-top: 15px;
+}
+
+.project-details img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-details ul {
+  padding-left: 20px;
+}
+
+.project-details li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* SKILLS */
+.skill-card {
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* CERTIFICATES */
+.certificate-card {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* BLOBS */
+.blob {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.blue {
+  background: #4f46e5;
+  top: 10%;
+  left: 10%;
+}
+
+.pink {
+  background: #ec4899;
+  bottom: 10%;
+  right: 10%;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
 }
