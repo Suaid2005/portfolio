@@ -1,173 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Suaid | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Suaid | AI & DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Muhammad Suaid</h1>
-    <p>Robotics & Systems Engineering Enthusiast | DevOps | Graphic Design</p>
-    <p>
-        Computer Science undergraduate focused on Robotics, System Optimization,
-        and AI-driven systems. Actively seeking internship opportunities.
-    </p>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Suaid.</div>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <p>Email: suaidputhrabail75@gmail.com | Bangalore, India</p>
-    <p><a href="https://github.com/Suaid2005" target="_blank">GitHub Profile</a></p>
-    <p><a href="https://www.linkedin.com/in/muhammadsuaid" target="_blank">Linkedin Profile</a></p>
+<!-- BACKGROUND -->
+<div class="blob blue"></div>
+<div class="blob pink"></div>
 
+<!-- HERO -->
+<section id="home" class="hero">
 
-    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
-</header>
+  <!-- PROFILE IMAGE -->
+  <div class="profile-container">
+    <img src="assets/profile.jpg" alt="Muhammad Suaid" class="profile-img">
+  </div>
 
-<section id="about">
-    <h2>About Me</h2>
+  <h1>Hi, I'm <span>Muhammad Suaid</span></h1>
+  <p>AI Enthusiast • NLP & VLM Explorer • DevOps Learner</p>
 
-    <p>
-        I am a Computer Science undergraduate specializing in Artificial Intelligence, with a strong interest in Robotics and Systems Engineering. I focus on building efficient, intelligent systems by combining AI concepts with system-level understanding and DevOps practices.
-    </p>
+  <!-- SOCIAL LINKS -->
+  <div class="socials">
+    <a href="https://linkedin.com/in/muhammadsuaid" target="_blank">LinkedIn</a>
+    <a href="https://github.com/suaid2005" target="_blank">GitHub</a>
+  </div>
 
-    <p>
-        I have hands-on experience with Linux, Docker, and Git, and have worked on projects involving NLP, embedded systems, and automation. My approach emphasizes problem-solving, optimization, and structured development workflows.
-    </p>
-
-    <p>
-        I am particularly interested in Robo-DevOps, system optimization, and AI-driven engineering, and I am actively seeking opportunities to apply my skills in real-world environments.
-    </p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="assets/resume.pdf" download class="btn outline">Download Resume</a>
+  </div>
 </section>
 
-<section id="skills">
-    <h2>Technical Skills</h2>
-
-    <div class="skill-box">
-        <h3>Languages</h3>
-        <p>C, Python, Basic Java, HTML</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Tools & Platforms</h3>
-        <p>Git/GitHub, Docker, Linux (System Operations)</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Robotics</h3>
-        <p>Basic ROS2, Embedded Systems</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Other Skills</h3>
-        <p>Agile, Research Documentation, Critical Thinking, Leadership</p>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="glass fade">
+  <h2>About Me</h2>
+  <p>
+  Computer Science undergraduate at Presidency University with strong focus on 
+  Artificial Intelligence, NLP, and Vision-Language Models (VLM).
+</p>
+<p>
+  Experienced in dataset collection, annotation, preprocessing, and building 
+  structured data pipelines. Passionate about developing intelligent systems 
+  and contributing to real-world AI applications.
+</p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+<!-- PROJECTS -->
+<section id="projects" class="glass fade">
+  <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Waste Sorting Automation System (Arduino)</h3>
-        <p>
-            • Implemented Arduino-based waste classification using IR and moisture sensors<br>
-            • Developed embedded logic for real-time sorting decisions<br>
-            • Improved classification accuracy and reduced manual intervention
-        </p>
+  <div class="grid">
+
+    <div class="project-card" onclick="toggleProject(this)">
+      <h3>Hybrid Sentiment Analysis System <span style="opacity:0.6;">(Click)</span></h3>
+      <div class="project-details">
+        <img src="assets/projects/p1.jpg">
+        <ul>
+          <li>Collected and processed textual datasets</li>
+          <li>Performed manual and rule-based annotation</li>
+          <li>Cleaned and structured raw data</li>
+          <li>Handled linguistic challenges (negation, context)</li>
+          <li>Built hybrid lexicon + statistical model</li>
+          <li>Developed Streamlit application</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Equilibriometer for Motorcycles (IEEE Tech Week 2025 Ideathon)</h3>
-        <p>
-            • Proposed balance monitoring system using gyroscope and accelerometer<br>
-            • Designed alert system for unsafe lean angles<br>
-            • Explored AI-based predictive safety models<br>
-            • Referred to research such as Yamaha Motoroid2
-        </p>
+    <div class="project-card" onclick="toggleProject(this)">
+      <h3>Ideathon: Equilibriometer (Motorcycle Safety)<span style="opacity:0.6;">(Click)</span></h3>
+      <div class="project-details">
+        <img src="assets/projects/p2.jpg">
+        <ul>
+          <li>Designed balance monitoring system</li>
+          <li>Used gyroscope & accelerometer sensors</li>
+          <li>Proposed unsafe lean angle alert system</li>
+          <li>Explored AI-based predictive safety models</li>
+          <li>Researched Yamaha Motoroid2 concepts</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Hybrid Sentiment Analysis System (NLP / LLM Foundation)</h3>
-        <p>
-            • Developed sentiment analysis system using VADER, TextBlob, and custom lexicon<br>
-            • Handled negation, contextual phrases, and intensity modifiers<br>
-            • Built hybrid scoring combining rule-based and statistical methods<br>
-            • Created Streamlit app for real-time and bulk CSV analysis
-        </p>
+    <div class="project-card" onclick="toggleProject(this)">
+      <h3>Waste Sorting Automation using Arduino<span style="opacity:0.6;">(Click)</span></h3>
+      <div class="project-details">
+        <img src="assets/projects/p3.jpg">
+       <ul>
+          <li>Built Arduino-based waste classification system</li>
+          <li>Used IR and moisture sensors</li>
+          <li>Implemented real-time sorting logic</li>
+          <li>Reduced manual intervention</li>
+          <li>Improved classification accuracy</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Personal Portfolio Website (Web Development - GitHub)</h3>
-        <p>
-            • Designed and deployed a professional portfolio website<br>
-            • Built responsive UI with structured sections<br>
-            • Integrated Formspree contact form and resume download<br>
-            • Version-controlled and deployed using Git and GitHub Pages<br>
-            • Tech: HTML, CSS, JavaScript, Git, GitHub Pages, Formspree
-        </p>
+    <div class="project-card" onclick="toggleProject(this)">
+      <h3>Personal Portfolio Website<span style="opacity:0.6;">(Click)</span></h3>
+      <div class="project-details">
+        <img src="assets/projects/p4.jpg">
+        <ul>
+          <li>Designed responsive portfolio UI</li>
+          <li>Integrated Formspree contact form</li>
+          <li>Added resume download feature</li>
+          <li>Used Git & GitHub for version control</li>
+          <li>Deployed using GitHub Pages</li>
+        </ul>
+      </div>
     </div>
+
+  </div>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
+<!-- SKILLS -->
+<section id="skills" class="glass fade">
+  <h2>Technical Skills</h2>
 
-    <p>
-        <strong>B.Tech CSE</strong> – Presidency University, Bangalore<br>
-        2024–2028 (Expected) | CGPA: 9.0
-    </p>
-
-    <p>
-        <strong>PUC (PCMC)</strong> – Yenepoya PU College, Mangalore<br>
-        2022–2024 | Grade: Distinction
-    </p>
-
-    <p>
-        <strong>SSLC</strong> – Manshar English Medium School<br>
-        2021–2022 | Distinction (Topper)
-    </p>
+  <div class="grid">
+    <div class="skill-card"><h3>Programming</h3><p>Python, C, Java</p></div>
+    <div class="skill-card"><h3>AI / ML</h3><p>NLP, CV, Data Annotation</p></div>
+    <div class="skill-card"><h3>Frameworks</h3><p>TensorFlow, PyTorch</p></div>
+    <div class="skill-card"><h3>Tools</h3><p>Git, GitHub, Figma</p></div>
+    <div class="skill-card"><h3>Others</h3><p>Research Documentation, Agile, Problem Solving </p></div>
+  </div>
 </section>
 
-<section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Basics of Artificial Intelligence — Cambridge International Qualifications, UK</li>
-        <li>Agile Project Management — HP Foundation</li>
-        <li>DevOps Decode — GoOps Club Presidency University</li>
-        <li>IEEE Tech Week 2025 (Ideathon) - IEEE</li>
-        <li>Figma Bootcamp — NSDC / LetsUpgrade</li>
-    </ul>
+<!-- CERTIFICATES -->
+<section id="certificates" class="glass fade">
+  <h2>Certificates</h2>
+
+  <div class="grid certificates-grid">
+    <div class="certificate-card"><p>Basics of Artificial Intelligence - Cambridge International Qualifications </p></div>
+    <div class="certificate-card"><p>Agile Project Management - HP Foundation </p></div>
+    <div class="certificate-card"><p>IEEE Tech Week 2025 (Ideathon) - IEEE </p></div>
+    <div class="certificate-card"><p>Figma Bootcamp - LetsUpgrade</p></div>
+  </div>
 </section>
 
-<section id="leadership">
-    <h2>Leadership Experience</h2>
-    <ul>
-        <li>General Secretary — Manshar Student Union (2021–2022)</li>
-        <li>Campus Secretary — SSF Belthangady Sector (2022–2024)</li>
-        <li>Media Secretary — SSF KR Puram Division (2025–Present)</li>
-        <li>Official Media Team Member — SSF Bengaluru District</li>
-    </ul>
-</section>
+<!-- CONTACT -->
+<section id="contact" class="glass fade">
+  <h2>Contact Me</h2>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <form action="https://formspree.io/f/xojpeeel" method="POST">
-        
-        <input type="hidden" name="_subject" value="New Portfolio Message from Website">
-
-        <input type="text" name="name" placeholder="Your Name" required>
-        
-        <input type="email" name="email" placeholder="Your Email" required>
-        
-        <textarea name="message" placeholder="Your Message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
+  <form action="https://formspree.io/f/xojpeeel" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
 
 </section>
 
 <footer>
-    <p>© 2026 Muhammad Suaid</p>
+  © 2026 Muhammad Suaid • All Rights Reserved
 </footer>
 
 <script src="script.js"></script>
