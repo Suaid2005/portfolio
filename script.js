@@ -1,11 +1,9 @@
-// PROJECT TOGGLE (expand/collapse)
+// PROJECT TOGGLE
 function toggleProject(card) {
   const allCards = document.querySelectorAll(".project-card");
 
   allCards.forEach(c => {
-    if (c !== card) {
-      c.classList.remove("active");
-    }
+    if (c !== card) c.classList.remove("active");
   });
 
   card.classList.toggle("active");
@@ -29,7 +27,7 @@ sections.forEach(sec => {
   observer.observe(sec);
 });
 
-// ACTIVE NAVBAR LINK
+// NAV ACTIVE LINK
 const navLinks = document.querySelectorAll(".navbar a");
 const allSections = document.querySelectorAll("section");
 
@@ -49,3 +47,26 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// =====================
+// CERTIFICATE MODAL
+// =====================
+
+function openCert(path) {
+  const modal = document.getElementById("certModal");
+  const img = document.getElementById("certImg");
+
+  img.src = path;
+  modal.style.display = "flex";
+}
+
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("certModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
