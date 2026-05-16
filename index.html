@@ -22,7 +22,6 @@
   </ul>
 </nav>
 
-<!-- BACKGROUND -->
 <div class="blob blue"></div>
 <div class="blob pink"></div>
 
@@ -34,7 +33,7 @@
   </div>
 
   <h1>Hi, I'm <span>Muhammad Suaid</span></h1>
-  <p>DevOps Learner | CI/CD | Docker | Linux | Web Development</p>
+  <p>DevOps Engineer Aspirant | CI/CD | Docker | Linux | GitHub Actions | Web Development</p>
 
   <div class="socials">
     <a href="https://github.com/Suaid2005" target="_blank">GitHub</a>
@@ -50,18 +49,12 @@
 <!-- ABOUT -->
 <section id="about" class="glass fade">
   <h2>About Me</h2>
-  <p>
-    Computer Science (DevOps) undergraduate with strong interest in DevOps,
-    cloud technologies, automation, CI/CD pipelines, and web development.
-  </p>
-  <p>
-    Hands-on experience with Docker, GitHub Actions, Linux (WSL2), Jenkins basics,
-    Git/GitHub, and deployment workflows through academic and personal projects.
-  </p>
-  <p>
-    Familiar with frontend development using HTML, CSS, JavaScript, and MySQL basics.
-    Passionate about building automation systems and real-world DevOps pipelines.
-  </p>
+
+  <p>Computer Science (DevOps) undergraduate with strong interest in DevOps, cloud infrastructure, automation, CI/CD pipelines, and web development.</p>
+
+  <p>Hands-on experience with Docker, GitHub Actions, Linux (WSL2), Jenkins basics, Git/GitHub, and deployment workflows through academic projects.</p>
+
+  <p>Familiar with frontend development using HTML, CSS, JavaScript and basic MySQL. Passionate about building automation systems and real-world DevOps pipelines.</p>
 </section>
 
 <!-- PROJECTS -->
@@ -70,7 +63,6 @@
 
   <div class="grid">
 
-    <!-- DEVOPS PROJECT -->
     <div class="project-card" onclick="toggleProject(this)">
       <h3>DevOps Portfolio CI/CD Pipeline</h3>
 
@@ -79,8 +71,8 @@
 
         <ul>
           <li>Containerized portfolio using Docker + nginx</li>
-          <li>Built CI/CD pipeline using GitHub Actions</li>
-          <li>Automated build on Git push events</li>
+          <li>Built CI/CD using GitHub Actions</li>
+          <li>Automated build on Git push</li>
           <li>Deployed using WSL2 Linux environment</li>
           <li>Version control using Git & GitHub</li>
         </ul>
@@ -92,34 +84,26 @@
       </div>
     </div>
 
-    <!-- NLP -->
     <div class="project-card" onclick="toggleProject(this)">
       <h3>Hybrid Sentiment Analysis System (NLP)</h3>
-
       <div class="project-details">
         <img src="assets/projects/p1.jpg">
-
         <ul>
           <li>Dataset collection & preprocessing</li>
-          <li>Manual + rule-based annotation</li>
-          <li>Hybrid NLP model (lexicon + statistical)</li>
-          <li>Handled context & negation cases</li>
+          <li>Annotation & cleaning pipeline</li>
+          <li>Hybrid NLP model (lexicon + ML)</li>
         </ul>
       </div>
     </div>
 
-    <!-- ARDUINO -->
     <div class="project-card" onclick="toggleProject(this)">
       <h3>Waste Sorting Automation (Arduino)</h3>
-
       <div class="project-details">
         <img src="assets/projects/p3.jpg">
-
         <ul>
-          <li>IR + moisture sensor-based classification</li>
-          <li>Embedded system logic design</li>
-          <li>Real-time sorting automation</li>
-          <li>Reduced manual processing effort</li>
+          <li>IR + moisture sensor system</li>
+          <li>Embedded decision logic</li>
+          <li>Automation-based waste sorting</li>
         </ul>
       </div>
     </div>
@@ -156,7 +140,7 @@
   </div>
 </section>
 
-<!-- CERTIFICATES (CLICK TO VIEW IMAGE) -->
+<!-- CERTIFICATES -->
 <section id="certificates" class="glass fade">
   <h2>Certificates</h2>
 
@@ -200,6 +184,12 @@
 <footer>
   © 2026 Muhammad Suaid • DevOps Portfolio
 </footer>
+
+<!-- CERTIFICATE MODAL -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeCert()">&times;</span>
+  <img class="modal-content" id="certImg">
+</div>
 
 <script src="script.js"></script>
 </body>
